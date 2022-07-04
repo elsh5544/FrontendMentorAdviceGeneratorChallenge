@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Manrope';
+}
+
+body {
+    margin: 0;
+    background: hsl(218, 23%, 16%);
+}
+
+.attribution{
+    font-size: 11px;
+    text-align: center;
+    background: aliceblue;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.quote{
+    margin: 2rem auto;
+    width: 40rem;
+    max-width: 90%;
+    border-radius: 10px;
+    padding: 1rem;
+    color: hsl(193, 38%, 86%);
+    background: hsl(217, 19%, 24%);
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -75%);
+    transform: translate(-50%, -75%);
+
+    displaygrid: items phantom;
+
+}
+
+.quote h1{
+    color: hsl(150, 100%, 66%);
+}
+
+.nextQuoteButton{
+    background: hsl(150, 100%, 66%);
+    padding: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    border: black;
+    margin: 0;
+    position: center;
+    -ms-transform: translateY(75%);
+    transform: translateY(75%);
+}
+
+.nextQuoteButton:focus {
+    outline: none;
+
+}
+/*   */
+/*.nextQuoteButton:focus,*/
+.nextQuoteButton:hover,
+.nextQuoteButton:active {
+    -webkit-animation: glowing 100ms forwards;
+    -o-animation: glowing 100ms forwards;
+    animation: glowing 100ms forwards;
+}
+
+@keyframes glowing {
+    0% {
+        box-shadow: 0 0 0px hsl(150, 100%, 66%);
+    }
+    10%{
+        box-shadow: 0 0 5px hsl(150, 100%, 66%);
+    }
+    20% {
+        box-shadow: 0 0 10px hsl(150, 100%, 66%);
+    }
+    30% {
+        box-shadow: 0 0 15px hsl(150, 100%, 66%);
+    }
+    40% {
+        box-shadow: 0 0 20px hsl(150, 100%, 66%);
+    }
+    50% {
+         box-shadow: 0 0 25px hsl(150, 100%, 66%);
+     }
+    60%{
+        box-shadow: 0 0 30px hsl(150, 100%, 66%);
+    }
+    70% {
+        box-shadow: 0 0 35px hsl(150, 100%, 66%);
+    }
+    80% {
+        box-shadow: 0 0 40px hsl(150, 100%, 66%);
+    }
+    90% {
+        box-shadow: 0 0 45px hsl(150, 100%, 66%);
+    }
+    100% {
+        box-shadow: 0 0 50px hsl(150, 100%, 66%);
+    }
+}
